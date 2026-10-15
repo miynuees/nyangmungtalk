@@ -1,5 +1,5 @@
 {
-  "version": "0.1.6",
+  "version": "0.1.7",
   "url": "https://miynuees.github.io/nyangmungtalk/%EB%83%A5%EB%A9%8D%ED%86%A1_%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8.exe",
-  "note": "내 상태(수업 중), 읽음 표시, 친구 누르면 바로 대화, 안 읽은 개수, 이어 쓰기"
+  "note": "한 줄 칸에서 보내면 ✓ 보냈어요 표시"
 }
