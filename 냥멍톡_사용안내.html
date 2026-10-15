@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>냥멍톡 사용안내</title>
+<style>
+  @font-face { font-family:'Pretendard'; font-weight:45 920; src:url('cat_app_files/fonts/PretendardVariable.woff2') format('woff2-variations'); }
+  :root { --bg:#fff9f6; --card:#fff; --ink:#4a4046; --sub:#8a7e84; --pink:#e0809a; --line:#f1e6e8; --mint:#cdeedb; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Pretendard','Malgun Gothic',sans-serif; line-height:1.7; letter-spacing:-0.01em; }
+  main { max-width:640px; margin:0 auto; padding:36px 20px 60px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  .lead { color:var(--sub); margin:0 0 28px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin-bottom:14px; }
+  h2 { font-size:16px; margin:0 0 8px; color:var(--pink); }
+  ul { margin:0; padding-left:20px; }
+  li { margin:3px 0; }
+  kbd { background:#f6eef0; border-radius:6px; padding:1px 6px; font-family:inherit; font-size:.92em; }
+  .note { font-size:13px; color:var(--sub); }
+</style>
+</head>
+<body>
+<main>
+  <h1>🐾 냥멍톡</h1>
+  <p class="lead">책상 위 작은 냥멍이로 아는 선생님들과 짧게 이야기 나누는 프로그램이에요.</p>
+
+  <section>
+    <h2>👆 냥멍이 만지기</h2>
+    <ul>
+      <li><b>한 번 클릭</b>: 쓰다듬기</li>
+      <li><b>더블클릭</b> 또는 <b>오른쪽 클릭</b>: 메뉴 (💬 대화 · 📅 오늘 · 간식 · ⚙️ 설정 · 👋 종료)</li>
+      <li><b>끌기</b>: 원하는 자리로 옮기기 (자리는 기억해요)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💬 처음 대화하기</h2>
+    <ul>
+      <li>메뉴 → <b>💬 대화</b> → 닉네임을 정하면 <kbd>세니#2344</kbd> 같은 <b>내 코드</b>가 생겨요.</li>
+      <li>서로 코드를 알려 주고 <b>🐾 친구</b> → 친구 코드로 추가에 넣으면 친구가 돼요.</li>
+      <li><b>💬 새 대화</b>에서 친구를 고르면 1:1, 여러 명(최대 4명)을 고르면 단체 대화예요.</li>
+      <li>메시지는 <b>보낸 지 하루가 지나면 사라져요.</b></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔔 메시지가 오면</h2>
+    <ul>
+      <li>냥멍이 위에 작은 카드가 떠요. <b>답장</b>을 누르면 바로 답할 수 있고, <b>×</b>는 읽음으로 닫기, 카드를 누르면 대화 창이 열려요.</li>
+      <li>카드는 20초 뒤 들어가고, 안 읽은 대화 수는 분홍 숫자로 남아요. <b>분홍 숫자를 누르면</b> 못 본 카드가 다시 떠요(한 번 더 누르면 접혀요).</li>
+      <li>수업 중엔 ⚙️ 설정 → <b>대화 오면 말풍선으로 알려주기</b>를 꺼 두세요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🐶 친구 냥멍이 띄우기</h2>
+    <ul>
+      <li>대화 창 → 🐾 친구 → 친구 옆 <b>화면에 띄우기</b> (최대 4명)</li>
+      <li>친구 냥멍이는 그 친구가 정한 모습 그대로 나와요. 냥멍톡을 켜 둔 친구는 🟢 초록 점, 꺼 둔 친구는 쿨쿨 자요.</li>
+      <li><b>클릭</b> 콕 찌르기 · <b>더블클릭</b> 바로 한 줄 메시지 쓰기 · <b>오른쪽 클릭</b> 메뉴(대화 창 · 간식 보내기 · 숨기기)</li>
+      <li>그 친구가 보낸 메시지는 친구 머리 위 말풍선으로 떠요. 못 봤으면 친구 옆에 분홍 숫자가 남고, 누르면 다시 보여요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>❓ 안 될 때</h2>
+    <ul>
+      <li>바탕화면의 <b>냥멍톡</b> 아이콘을 다시 눌러 주세요.</li>
+      <li>그래도 안 되면 설치 폴더(<kbd>%LOCALAPPDATA%\SeniWidgets\nyangmungtalk</kbd>)의 <b>debug.log</b>를 만든 사람에게 보내 주세요.</li>
+    </ul>
+    <p class="note">시험판이에요. 새 버전이 나오면 하루 한 번 알아서 바꿔 입어요. 불편한 점이나 바라는 점은 편하게 알려 주세요.</p>
+  </section>
+</main>
+</body>
+</html>
