@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "url": "https://miynuees.github.io/nyangmungtalk/%EB%83%A5%EB%A9%8D%ED%86%A1_%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8.exe",
-  "note": "업데이트 후 클로드 말풍선 안 뜨던 문제 고침, 바뀐 것 알려주기"
+  "note": "숫자 누르면 지난 메시지까지, 띄우는 친구 6명"
 }
