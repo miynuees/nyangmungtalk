@@ -56,6 +56,15 @@
   @media (max-width:430px) { h1 { font-size:34px; } .wrap { padding-block:34px 48px; } .pet { width:112px; height:88px; } }
   .card[id] { scroll-margin-top:16px; }
   .card:target { box-shadow:0 0 0 3px #f5a0b0; }   /* 냥멍이 말풍선 [바뀐 것 보기]로 들어오면 그 버전 카드 강조 */
+  /* 처음 설치 / 업데이트 두 카드를 옆으로 나란히 (좁은 화면에선 위아래) */
+  .duo { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:14px; margin-bottom:18px; }
+  .duo .card { margin-bottom:0; min-width:0; display:flex; flex-direction:column; padding:20px 18px; }
+  .duo .card h2 { font-size:21px; }
+  .duo .card p { font-size:13px; margin-bottom:12px; }
+  .duo .note { font-size:12px; padding:9px 11px; }
+  .duo .dl { margin-top:auto; padding:9px 12px; font-size:14.5px; border-radius:13px; }
+  .duo .dl small { font-size:11px; }
+  @media (max-width:560px) { .duo { grid-template-columns:minmax(0,1fr); } }
 </style>
 </head>
 <body>
@@ -65,29 +74,38 @@
     <div class="pets"><div class="pet" id="pet-cat"></div><div class="pet" id="pet-dog"></div></div>
     <h1>냥멍톡</h1>
     <p class="lead">화면 구석의 작은 냥멍이로<br>아는 선생님들과 짧게 이야기 나눠요.</p>
-    <span class="ver">지금 버전 v0.2.2 (시험판)</span>
+    <span class="ver">지금 버전 v0.2.3 (시험판)</span>
   </header>
 
-  <div class="card">
-    <h2>처음이신가요?</h2>
-    <p>아래 파일을 받아서 실행하면 설치가 끝나요. 따로 준비할 건 없어요.</p>
-    <a class="dl new" href="%EB%83%A5%EB%A9%8D%ED%86%A1_%EC%84%A4%EC%B9%98.exe" download>
-      냥멍톡 설치하기
-      <small>처음 쓰는 컴퓨터에</small>
-    </a>
+  <div class="duo">
+    <div class="card">
+      <h2>처음이신가요?</h2>
+      <p>아래 파일을 받아서 실행하면 설치가 끝나요. 따로 준비할 건 없어요.</p>
+      <a class="dl new" href="%EB%83%A5%EB%A9%8D%ED%86%A1_%EC%84%A4%EC%B9%98.exe" download>
+        냥멍톡 설치하기
+        <small>처음 쓰는 컴퓨터에</small>
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>이미 쓰고 계신가요?</h2>
+      <p>지금 것을 지울 필요 없어요. 아래 파일만 실행하면 새 버전으로 바뀌고, 닉네임·친구·대화·모습은 그대로 남아요.</p>
+      <div class="note" style="margin:0 0 12px">하루 한 번 <b>알아서 새 버전으로 바뀌어요.</b> 지금 바로 바꾸고 싶을 때만 눌러 주세요.</div>
+      <a class="dl upd" href="%EB%83%A5%EB%A9%8D%ED%86%A1_%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8.exe" download>
+        업데이트하기
+        <small>창 없이 잠깐 만에 끝나요</small>
+      </a>
+
+    </div>
   </div>
 
-  <div class="card">
-    <h2>이미 쓰고 계신가요?</h2>
-    <p>지금 것을 지울 필요 없어요. 아래 파일만 실행하면 새 버전으로 바뀌고, 닉네임·친구·대화·모습은 그대로 남아요.</p>
-    <a class="dl upd" href="%EB%83%A5%EB%A9%8D%ED%86%A1_%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8.exe" download>
-      업데이트하기
-      <small>창 없이 잠깐 만에 끝나요</small>
-    </a>
-    <div class="note" style="margin-top:14px">
-      이번부터는 냥멍톡이 <b>하루 한 번 알아서 새 버전으로 바꿔 입어요.</b>
-      그래서 이 버튼을 안 눌러도 하루쯤 지나면 저절로 바뀌어요. 지금 바로 바꾸고 싶을 때만 눌러 주세요.
-    </div>
+  <div class="card" id="v0.2.3">
+    <h2>v0.2.3에서 바뀐 것</h2>
+    <ul>
+      <li><b>냥멍이·친구 냥멍이·집이 조금 작아졌어요</b> (80%). 친구 냥멍이와 내 냥멍이가 같은 크기예요.</li>
+      <li>캐릭터 바로 옆 빈 곳을 누르면 뒤에 있는 바탕화면·프로그램이 눌려요. 클릭 범위를 캐릭터에 딱 맞게 줄였어요.</li>
+      <li>한 줄 메시지 칸에 <b>누구에게 보내는지</b> 나와요. (예: 메시지 보내기 · 워니 님에게)</li>
+    </ul>
   </div>
 
   <div class="card" id="v0.2.2">
